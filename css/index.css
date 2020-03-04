@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto|Roboto+Slab|Titillium+Web&display=swap');
+
+:root{
+    --main-color: black;
+    --secondary-color: #C71313;
+}
+
+body{
+    max-width: 1050px;
+    margin: auto;
+}
+
+h1, p{
+    margin: 0;
+    padding: 0;
+}
+
+header nav h1:first-letter{
+    color: var(--secondary-color);
+}
+
+header nav h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header nav .left-side-menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+header nav .left-side-menu a{
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+header nav .left-side-menu a:hover{
+    color: var(--secondary-color);
+}
+
+@media (min-width:900px) {
+    header nav{
+        display:flex;
+    }
+
+    header nav .left-side-menu{
+        flex: 1;
+    }
+}
+
+header div{
+    background-image: url(../img/3dappleihone.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+header .banner{
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    align-items: center;
+    flex-direction: column;
+}
+
+header .banner .title{
+    font-size: 2rem;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+}
+
+main h2:first-letter{
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+main h2{
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+main h3{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+main .accessories-list .accessories-card img{
+    display: block;
+    width: 100%;
+}
+
+main .accessories-list .accessories-card .button-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width:400px) {
+    main .accessories-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width:550px) {
+    main .accessories-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+
+@media (min-width:900px) {
+    main .accessories-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+main .tables-list .tables-card img{
+    display: block;
+    width: 100%;
+}
+
+main .tables-list .tables-card .button-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width:400px) {
+    main .tables-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width:550px) {
+    main .tables-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+
+@media (min-width:900px) {
+    main .tables-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+main .smart-list .smart-card img{
+    display: block;
+    width: 100%;
+}
+
+main .smart .smart-card .button-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width:400px) {
+    main .smart-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width:550px) {
+    main .smart-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+
+@media (min-width:900px) {
+    main .smart-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+footer{
+    background-color: #444444;
+    min-height: 300px;
+}
+footer h2{
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.button{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #0D0101;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #0D0101;
+    text-align: center;
+    transition: all 0.4s;
+    background-color: transparent;
+}
+
+.button:hover{
+    color: #0D0101;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.card-button{
+    border-color: #0D0101;
+    color: #0D0101;
+}
+
+.card-button:hover{
+    background-color: #0D0101;
+    color:#ffffff;
+}
